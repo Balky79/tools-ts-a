@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
+import NavbarScroller from './components/topnav';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import routes from './routes/routes';
+import { BrowserRouter } from 'react-router-dom';
+
+const navigation = {
+    brand: { name: 'Igors.net', to: '/tools/' },
+    links: [
+        { name: 'MD5', to: '/tools/' },
+        { name: 'Item 2', to: '/tools/item2' },
+        { name: 'Wheel', to: '/tools/wheel' },
+        { name: 'Item 4', to: '/tools/' },
+        { name: 'Item 5', to: '/tools/' },
+        { name: 'Item 6', to: '/tools/' },
+        { name: 'Item 7', to: '/tools/' },
+        { name: 'Item 8', to: '/tools/' },
+    ],
+};
+
+function App(): JSX.Element {
+    const { brand, links } = navigation;
+    return (
+        <div className="App">
+            <NavbarScroller brand={brand} links={links} />
+            <BrowserRouter>{routes}</BrowserRouter>
+        </div>
+    );
 }
 
 export default App;
