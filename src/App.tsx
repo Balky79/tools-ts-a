@@ -11,7 +11,7 @@ const navigation = {
         { name: 'MD5', to: '/tools/' },
         { name: 'Item 2', to: '/tools/item2' },
         { name: 'Wheel', to: '/tools/wheel' },
-        { name: 'Item 4', to: '/tools/' },
+        { name: 'NameGen', to: '/tools/namegen' },
         { name: 'Item 5', to: '/tools/' },
         { name: 'Item 6', to: '/tools/' },
         { name: 'Item 7', to: '/tools/' },
