@@ -8,11 +8,11 @@ import { BrowserRouter } from 'react-router-dom';
 const navigation = {
     brand: { name: 'Igors.net', to: '/tools/' },
     links: [
-        { name: 'MD5', to: '/tools/' },
+        { name: 'MD5', to: '/tools/md5hasher' },
         { name: 'Item 2', to: '/tools/item2' },
         { name: 'Wheel', to: '/tools/wheel' },
         { name: 'NameGen', to: '/tools/namegen' },
-        { name: 'Item 5', to: '/tools/' },
+        { name: 'UA-finder', to: '/tools/uafinder' },
         { name: 'Item 6', to: '/tools/' },
         { name: 'Item 7', to: '/tools/' },
         { name: 'Item 8', to: '/tools/' },

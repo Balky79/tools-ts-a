@@ -11,7 +11,7 @@ const defaultUser: User = {
     surname: '',
 };
 
-const Namegen = (): JSX.Element => {
+const Md5hahser = (): JSX.Element => {
     const [user, setUser] = useState(defaultUser);
 
     const onUserChange = <P extends keyof User>(prop: P, value: User[P]) => {
@@ -46,8 +46,7 @@ const Namegen = (): JSX.Element => {
 };
 
 const getTitle = (): JSX.Element => {
-    const a: JSX.Element = <h1>Name Generator</h1>;
-    return a;
+    return <h1>MD5 Hasher!</h1>;
 };
 
 getTitle.displayName = 'Kita';
@@ -55,9 +54,9 @@ getTitle.displayName = 'Kita';
 const getBody = (): JSX.Element => {
     const a: JSX.Element = (
         <p className={'display-linebreak'}>
-            {`Name generator will return all possible permutations
-             of names that could be used in your systems,
-            combining known and usual patterns of usernames starting with name or surname.`}
+            {`MD5 Hasher is a little helper tool in which your text gets converted
+            into MD5 Hash. MD5 Hash is mathematical algorithm that processes variable-length message
+            into fixed-length output - hash of 128 bits.`}
         </p>
     );
     return a;
@@ -68,4 +67,4 @@ const permutados = (name: string, surname: string): Array<string> => {
     return [name, surname];
 };
 
-export default Namegen;
+export default Md5hahser;
