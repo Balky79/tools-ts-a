@@ -13,7 +13,7 @@ const navigation = {
         { name: 'Wheel', to: '/tools/wheel' },
         { name: 'NameGen', to: '/tools/namegen' },
         { name: 'UA-finder', to: '/tools/uafinder' },
-        { name: 'Item 6', to: '/tools/' },
+        { name: 'Week', to: '/tools/week' },
         { name: 'Item 7', to: '/tools/' },
         { name: 'Item 8', to: '/tools/' },
     ],
